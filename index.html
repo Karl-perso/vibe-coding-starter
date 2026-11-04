@@ -3,13 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ma page</title>
+  <meta name="description" content="Le portfolio de Lina Moreau, étudiante en design graphique et éditorial.">
+  <title>Lina Moreau — Designer graphique</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <h1>Ma page</h1>
-    <p>Cette page est vide pour l'instant. Demandez à Copilot de la construire avec vous.</p>
+  <main class="portfolio">
+    <header class="topbar" aria-label="En-tête du portfolio">
+      <a class="wordmark" href="#accueil" aria-label="Lina Moreau, accueil">LM<span>.</span></a>
+      <p class="availability"><span aria-hidden="true"></span> Étudiante en design · Nantes</p>
+    </header>
+
+    <section class="intro" id="accueil" aria-labelledby="page-title">
+      <p class="eyebrow">Portfolio 2024 — 2026</p>
+      <h1 id="page-title">Lina<br><span>Moreau</span></h1>
+      <div class="intro-bottom">
+        <p class="description">Je donne forme aux idées par le <strong>design graphique</strong>, l’image et les histoires qu’on partage.</p>
+        <span class="index-mark" aria-hidden="true">01 / 03</span>
+      </div>
+      <div class="intro-rule" aria-hidden="true"></div>
+    </section>
+
+    <section class="work" aria-labelledby="work-title">
+      <div class="work-heading">
+        <div>
+          <p class="eyebrow">Sélection personnelle</p>
+          <h2 id="work-title">Quelques<br>choses <em>en cours.</em></h2>
+        </div>
+        <p class="work-note">Graphisme, édition<br>et identités visuelles</p>
+      </div>
+
+      <button class="projects-toggle" type="button" aria-expanded="false" aria-controls="projects">
+        <span class="button-label">Découvrir mes projets</span>
+        <span class="button-icon" aria-hidden="true">↗</span>
+      </button>
+
+      <div class="projects" id="projects" hidden>
+        <article class="project project--one">
+          <div class="project-image project-image--one">
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Installation colorée dans une galerie d'exposition" loading="lazy">
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-caption">
+            <h3>Les jours colorés</h3>
+            <p>Identité visuelle · 2025</p>
+          </div>
+        </article>
+
+        <article class="project project--two">
+          <div class="project-image project-image--two">
+            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Composition abstraite de formes colorées" loading="lazy">
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-caption">
+            <h3>À la marge</h3>
+            <p>Édition indépendante · 2025</p>
+          </div>
+        </article>
+
+        <article class="project project--three">
+          <div class="project-image project-image--three">
+            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Affiches imprimées aux couleurs vives" loading="lazy">
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-caption">
+            <h3>Terrain commun</h3>
+            <p>Affiche &amp; typographie · 2024</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© Lina Moreau, 2026</span>
+      <span>Fait avec curiosité à Nantes</span>
+      <img src="https://visitor-badge.laobi.icu/badge?page_id=lina-moreau-vibe-coding-starter&amp;left_text=Vues&amp;left_color=%2376766f&amp;right_color=%23ed6947&amp;height=20" alt="Compteur global de vues du portfolio">
+    </footer>
   </main>
   <script src="js/main.js"></script>
 </body>
